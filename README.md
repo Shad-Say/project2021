@@ -21,3 +21,9 @@ These correlations are useful to understand the data in detail, as they give an 
 - I-Cheng Yeh, “ Modeling of strength of high performance concrete using artificial neural networks,” Cement and Concrete Research, Vol. 28, №12, pp. 1797–1808 (1998).
 - Ahsanul Kabir, Md Monjurul Hasan, Khasro Miah, “ Strength Prediction Model for Concrete”, ACEE Int. J. on Civil and Environmental Engineering, Vol. 2, №1, Aug 2013.
 - https://archive.ics.uci.edu/ml/datasets/Concrete+Compressive+Strength
+
+### Members
+
+- Anuragh Chikurdekar
+- Rutuja Bhure
+- Shardul Sayankal
