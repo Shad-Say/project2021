@@ -18,13 +18,13 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    <input type="text" name="i1" placeholder="Cement (Kg/m<sup>3</sup>)" required="required" />
-    <input type="text" name="i2" placeholder="Blast Furnace Slag (Kg/m<sup>3</sup>)" required="required" />
-		<input type="text" name="i3" placeholder="Fly Ash (Kg/m<sup>3</sup>)" required="required" />
-    <input type="text" name="i4" placeholder="Water (Kg/m<sup>3</sup>)" required="required" />
-    <input type="text" name="i5" placeholder="Super-Plasticizer (Kg/m<sup>3</sup>)" required="required" />
-    <input type="text" name="i6" placeholder="Coarse Aggregate (Kg/m<sup>3</sup>)" required="required" />
-    <input type="text" name="i7" placeholder="Fine Aggregate (Kg/m<sup>3</sup>)" required="required" />
+    <input type="text" name="i1" placeholder="Cement (Kg Per cubic meter)" required="required" />
+    <input type="text" name="i2" placeholder="Blast Furnace Slag (Kg Per cubic meter)" required="required" />
+		<input type="text" name="i3" placeholder="Fly Ash (Kg Per cubic meter)" required="required" />
+    <input type="text" name="i4" placeholder="Water (Kg Per cubic meter)" required="required" />
+    <input type="text" name="i5" placeholder="Super-Plasticizer (Kg Per cubic meter)" required="required" />
+    <input type="text" name="i6" placeholder="Coarse Aggregate (Kg Per cubic meter)" required="required" />
+    <input type="text" name="i7" placeholder="Fine Aggregate (Kg Per cubic meter)" required="required" />
     <input type="text" name="i8" placeholder="Age (Days)" required="required" />
     
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
