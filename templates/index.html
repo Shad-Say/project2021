@@ -18,14 +18,14 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    <input type="text" name="i1" placeholder="Cement" required="required" />
-    <input type="text" name="i2" placeholder="Blast Furnace Slag" required="required" />
-		<input type="text" name="i3" placeholder="Fly Ash" required="required" />
-    <input type="text" name="i4" placeholder="Water" required="required" />
-    <input type="text" name="i5" placeholder="Super-Plasticizer" required="required" />
-    <input type="text" name="i6" placeholder="Coarse Aggregate" required="required" />
-    <input type="text" name="i7" placeholder="Fine Aggregate" required="required" />
-    <input type="text" name="i8" placeholder="Age" required="required" />
+    <input type="text" name="i1" placeholder="Cement (Kg/m<sup>3</sup>)" required="required" />
+    <input type="text" name="i2" placeholder="Blast Furnace Slag (Kg/m<sup>3</sup>)" required="required" />
+		<input type="text" name="i3" placeholder="Fly Ash (Kg/m<sup>3</sup>)" required="required" />
+    <input type="text" name="i4" placeholder="Water (Kg/m<sup>3</sup>)" required="required" />
+    <input type="text" name="i5" placeholder="Super-Plasticizer (Kg/m<sup>3</sup>)" required="required" />
+    <input type="text" name="i6" placeholder="Coarse Aggregate (Kg/m<sup>3</sup>)" required="required" />
+    <input type="text" name="i7" placeholder="Fine Aggregate (Kg/m<sup>3</sup>)" required="required" />
+    <input type="text" name="i8" placeholder="Age (Days)" required="required" />
     
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>

@@ -31,7 +31,7 @@ br.fit(X,Y)
 #Pickle
 pickle.dump(br,open ('model.pkl','wb'))
 model = pickle.load(open('model.pkl','rb'))
-print(model.predict([[540,0,0,162,2.5,1040,676,28]]))
+#print(model.predict([[540,0,0,162,2.5,1040,676,28]]))
 
 
 
