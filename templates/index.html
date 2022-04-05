@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html >
-<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<html>
+
 <head>
   <meta charset="UTF-8">
   <title>ML API</title>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
- <div class="login">
-	<h1>Concrete Compressive Strength Prediction</h1>
+  <h1>Concrete Compressive Strength <span>Prediction</span></h1>
+  <div class="login">
 
-     <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
-    <input type="text" name="i1" placeholder="Cement (Kg Per cubic meter)" required="required" />
-    <input type="text" name="i2" placeholder="Blast Furnace Slag (Kg Per cubic meter)" required="required" />
-		<input type="text" name="i3" placeholder="Fly Ash (Kg Per cubic meter)" required="required" />
-    <input type="text" name="i4" placeholder="Water (Kg Per cubic meter)" required="required" />
-    <input type="text" name="i5" placeholder="Super-Plasticizer (Kg Per cubic meter)" required="required" />
-    <input type="text" name="i6" placeholder="Coarse Aggregate (Kg Per cubic meter)" required="required" />
-    <input type="text" name="i7" placeholder="Fine Aggregate (Kg Per cubic meter)" required="required" />
-    <input type="text" name="i8" placeholder="Age (Days)" required="required" />
-    
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+      <input type="text" autocomplete="off" name="i1" placeholder="Cement (kg/m³)" required="required" />
+      <input type="text" autocomplete="off" name="i2" placeholder="Blast Furnace Slag (kg/m³)" required="required" />
+      <input type="text" autocomplete="off" name="i3" placeholder="Fly Ash (kg/m³)" required="required" />
+      <input type="text" autocomplete="off" name="i4" placeholder="Water (kg/m³)" required="required" />
+      <input type="text" autocomplete="off" name="i5" placeholder="Super-Plasticizer (kg/m³)" required="required" />
+      <input type="text" autocomplete="off" name="i6" placeholder="Coarse Aggregate (kg/m³)" required="required" />
+      <input type="text" autocomplete="off" name="i7" placeholder="Fine Aggregate (kg/m³)" required="required" />
+      <input type="text" autocomplete="off" name="i8" placeholder="Age (days)" required="required" />
+
+      <a href="#"><button type="submit" class="button button-2 button-3">Predict</button></a>
     </form>
 
-   <br>
-   <br>
-   {{ prediction_text }}
+    <br>
+    <br>
+    <h3>{{ prediction_text }}</h3>
 
- </div>
-
-
+  </div>
 </body>
+
 </html>
